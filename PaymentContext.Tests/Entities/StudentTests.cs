@@ -9,15 +9,15 @@ using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Tests.Entities
 {
-    [TestClass]
-    public class StudentTests
+  [TestClass]
+  public class StudentTests
+  {
+    [TestMethod]
+    public void AdicionarAssinatura()
     {
-        [TestMethod]
-        public void AdicionarAssinatura()
-        {
-          var name = new Name("Teste", "LastTEste");
-          
-          
-        }
+      var name = new Name("Teste", "LastTEste");
+      
+      
     }
+  }
 }

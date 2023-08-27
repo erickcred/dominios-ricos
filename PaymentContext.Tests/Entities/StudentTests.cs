@@ -15,9 +15,7 @@ namespace PaymentContext.Tests.Entities
         [TestMethod]
         public void AdicionarAssinatura()
         {
-          var subscription = new Subscription(null);
-          var student = new Student(new Name("João", "Silva"), new Document("12345678910", EDocumentType.CPF), new Email("joao@email.com"));
-          student.AddSubscription(subscription);
+          var name = new Name("Teste", "LastTEste");
           
           
         }

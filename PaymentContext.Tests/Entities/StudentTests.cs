@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaymentContext.Domain.Entities;
+using PaymentContext.Domain.Enums;
+using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Tests.Entities
 {
@@ -14,7 +16,7 @@ namespace PaymentContext.Tests.Entities
         public void AdicionarAssinatura()
         {
           var subscription = new Subscription(null);
-          var student = new Student("João", "Silva", "12345678910", "joao@email.com");
+          var student = new Student(new Name("João", "Silva"), new Document("12345678910", EDocumentType.CPF), new Email("joao@email.com"));
           student.AddSubscription(subscription);
           
           
